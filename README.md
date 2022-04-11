@@ -11,6 +11,7 @@ brew install jq
 brew install autojump
 brew install git-extras
 brew tap homebrew/cask
+brew tap homebrew/cask-versions
 brew cask install jumpcut
 brew install txn2/tap/kubefwd
 brew install kubectx stern fzf kube-ps1 derailed/k9s/k9s kustomize helm minikube hyperkit htop dockerd kube-ps1
