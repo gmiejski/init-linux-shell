@@ -74,3 +74,10 @@ Working key mapping:
 ⌥ Option + Delete == "Send Hex codes: 0x1B 0x08"
 ```
 
+Nice GNU sed compatibility:
+
+```
+brew install gnu-sed coreutils findutils
+and
+alias sed=/opt/homebrew/bin/gsed (edited) 
+```
