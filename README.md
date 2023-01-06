@@ -17,6 +17,7 @@ brew install txn2/tap/kubefwd
 brew install kubectx stern fzf kube-ps1 derailed/k9s/k9s kustomize helm minikube hyperkit htop dockerd kube-ps1
 brew install nmap
 brew install robscott/tap/kube-capacity
+brew install ngrok/ngrok/ngrok
 
 ```
 Links:
