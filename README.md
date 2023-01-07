@@ -18,6 +18,7 @@ brew install kubectx stern fzf kube-ps1 derailed/k9s/k9s kustomize helm minikube
 brew install nmap
 brew install robscott/tap/kube-capacity
 brew install ngrok/ngrok/ngrok
+brew install d2
 
 ```
 Links:
