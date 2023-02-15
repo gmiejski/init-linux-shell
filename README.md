@@ -19,6 +19,7 @@ brew install nmap
 brew install robscott/tap/kube-capacity
 brew install ngrok/ngrok/ngrok
 brew install d2
+brew install skoepo # https://github.com/containers/skopeo
 
 ```
 Links:
