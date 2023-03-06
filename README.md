@@ -64,6 +64,15 @@ function clearAppK8S {
 }
 
 alias dockerKillAll="docker kill $(docker ps -q)"
+
+function sumDockerCPU {
+        docker stats --no-stream | sort -k 4 -h | awk '{print $3}'  |  awk '{ if(index($1, "GiB")) {gsub("GiB","",$1); print $1 * 1000} else {gsub("MiB","",$1); print $1}}' | awk '{s+=$1}END{print s}'
+}
+
+function sumDockerMemory {
+        docker stats --no-stream | sort -k 4 -h | awk '{print $4}'  |  awk '{ if(index($1, "GiB")) {gsub("GiB","",$1); print $1 * 1000} else {gsub("MiB","",$1); print $1}}' | awk '{s+=$1}END{print s}'
+}
+
 ```
 ######################## ZSH end ######################
 
