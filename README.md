@@ -73,6 +73,18 @@ function sumDockerMemory {
         docker stats --no-stream | sort -k 4 -h | awk '{print $4}'  |  awk '{ if(index($1, "GiB")) {gsub("GiB","",$1); print $1 * 1000} else {gsub("MiB","",$1); print $1}}' | awk '{s+=$1}END{print s}'
 }
 
+function ksecret {
+
+    if [[ -z $1 ]]
+        then
+            echo "Usage: ksecret \$secret"
+            return
+        fi
+
+    kubectl  get secret $1 -o go-template='
+{{range $k,$v := .data}}{{printf "%s: " $k}}{{if not $v}}{{$v}}{{else}}{{$v | base64decode}}{{end}}{{"\n"}}{{end}}'
+}
+
 ```
 ######################## ZSH end ######################
 
