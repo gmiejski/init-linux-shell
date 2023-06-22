@@ -20,8 +20,14 @@ brew install robscott/tap/kube-capacity
 brew install ngrok/ngrok/ngrok
 brew install d2
 brew install skoepo # https://github.com/containers/skopeo
+```
+
+### krew
 
 ```
+kubectl krew install access-matrix
+```
+
 Links:
 * https://github.com/ahmetb/kubectx
 
