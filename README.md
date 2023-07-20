@@ -8,6 +8,7 @@
 
 ```
 brew install jq
+brew install yq # https://github.com/mikefarah/yq
 brew install autojump
 brew install git-extras
 brew tap homebrew/cask
