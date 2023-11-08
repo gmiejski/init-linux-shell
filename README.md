@@ -27,6 +27,7 @@ brew install skoepo # https://github.com/containers/skopeo
 
 ```
 kubectl krew install access-matrix
+kubectl krew install evict-pod
 ```
 
 Links:
