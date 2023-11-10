@@ -21,6 +21,7 @@ brew install robscott/tap/kube-capacity
 brew install ngrok/ngrok/ngrok
 brew install d2
 brew install skoepo # https://github.com/containers/skopeo
+brew tap robusta-dev/homebrew-krr && brew install krr
 ```
 
 ### krew
