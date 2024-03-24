@@ -123,6 +123,9 @@ Working key mapping:
 Preferences > Keys > Show/hide all windows with a system-wide hotkey
 `control + option + t`
 
+Hotkey Window profile
+* https://apple.stackexchange.com/a/48805
+
 Nice GNU sed compatibility:
 
 ```
