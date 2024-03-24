@@ -22,6 +22,11 @@ brew install ngrok/ngrok/ngrok
 brew install d2
 brew install skoepo # https://github.com/containers/skopeo
 brew tap robusta-dev/homebrew-krr && brew install krr
+
+brew install pipx
+pipx ensurepath
+pipx run --spec ranger-fm ranger
+
 ```
 
 ### krew
@@ -82,6 +87,12 @@ function sumDockerMemory {
         docker stats --no-stream | sort -k 4 -h | awk '{print $4}'  |  awk '{ if(index($1, "GiB")) {gsub("GiB","",$1); print $1 * 1000} else {gsub("MiB","",$1); print $1}}' | awk '{s+=$1}END{print s}'
 }
 
+function pomodoro {
+        bash /Users/grzegorzmiejski/workspaces/private/pomodoro-serverless/pomodoro-serverless/pomodoro.sh
+}
+
+alias rr='pipx run --spec ranger-fm ranger'
+
 function ksecret {
 
     if [[ -z $1 ]]
@@ -108,6 +119,9 @@ Working key mapping:
 ⌥ Option + -> == "send escape sequence 'f'"
 ⌥ Option + Delete == "Send Hex codes: 0x1B 0x08"
 ```
+
+Preferences > Keys > Show/hide all windows with a system-wide hotkey
+`control + option + t`
 
 Nice GNU sed compatibility:
 
