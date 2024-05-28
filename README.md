@@ -22,6 +22,10 @@ brew install ngrok/ngrok/ngrok
 brew install d2
 brew install skoepo # https://github.com/containers/skopeo
 brew tap robusta-dev/homebrew-krr && brew install krr
+brew install kcat
+brew install yq
+brew install ngrok/ngrok/ngrok
+brew install cloc
 
 brew install pipx
 pipx ensurepath
