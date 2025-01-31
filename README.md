@@ -33,6 +33,10 @@ pipx run --spec ranger-fm ranger
 
 ```
 
+## Other nice tooling optional
+* https://github.com/kubecolor/kubecolor
+
+
 ### krew
 
 ```
