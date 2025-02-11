@@ -26,6 +26,7 @@ brew install kcat
 brew install yq
 brew install ngrok/ngrok/ngrok
 brew install cloc
+brew install pyenv
 
 brew install pipx
 pipx ensurepath
