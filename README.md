@@ -8,7 +8,6 @@
 
 ```
 brew install jq
-brew install yq # https://github.com/mikefarah/yq
 brew install autojump
 brew install git-extras
 brew tap homebrew/cask
@@ -17,9 +16,7 @@ brew cask install jumpcut
 brew install txn2/tap/kubefwd
 brew install kubectx stern fzf kube-ps1 derailed/k9s/k9s kustomize helm minikube hyperkit htop dockerd kube-ps1
 brew install nmap
-brew install robscott/tap/kube-capacity
-brew install ngrok/ngrok/ngrok
-brew install d2
+# brew install d2
 brew install skoepo # https://github.com/containers/skopeo
 brew tap robusta-dev/homebrew-krr && brew install krr
 brew install kcat
@@ -27,26 +24,24 @@ brew install yq
 brew install ngrok/ngrok/ngrok
 brew install cloc
 brew install pyenv
-
+brew install uv
 brew install pipx
 pipx ensurepath
-pipx run --spec ranger-fm ranger
-
+# pipx run --spec ranger-fm ranger
+brew install gnu-sed coreutils findutils
+brew install asdf
 ```
 
 ## Other nice tooling optional
 * https://github.com/kubecolor/kubecolor
 
-
-```bash
-curl -LsSf https://astral.sh/uv/install.sh | sh
-```
-
-### krew
+### kubernetes
 
 ```
 kubectl krew install access-matrix
 kubectl krew install evict-pod
+brew install robscott/tap/kube-capacity
+
 ```
 
 Links:
@@ -117,6 +112,11 @@ function ksecret {
     kubectl  get secret $1 -o go-template='
 {{range $k,$v := .data}}{{printf "%s: " $k}}{{if not $v}}{{$v}}{{else}}{{$v | base64decode}}{{end}}{{"\n"}}{{end}}'
 }
+
+
+###########
+source <(fzf --zsh)
+alias sed=/opt/homebrew/bin/gsed
 
 ```
 ######################## ZSH end ######################
