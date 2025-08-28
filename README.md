@@ -38,6 +38,10 @@ pipx run --spec ranger-fm ranger
 * https://github.com/kubecolor/kubecolor
 
 
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
 ### krew
 
 ```
